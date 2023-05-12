@@ -1,0 +1,280 @@
+﻿@{
+    Layout = null;
+}
+@model VeritabanıProje.Models.Ziyaretci
+@{
+    var fuarlar = ViewData["Fuarlar"] as List<Fuar>;
+}
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html class="supernova">
+<head>
+    <meta charset="UTF-8">
+    <title>Giner</title>
+    <!-- =================== META =================== -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="../assets/img/favicon.png">
+    <script>
+        var favicon = document.querySelector('link[rel="shortcut icon"]');
+        window.isDarkMode = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        if (favicon && window.isDarkMode) {
+            favicon.href = favicon.href.replaceAll('favicon-2021-light%402x.png', 'favicon-2021-dark%402x.png');
+        }
+    </script>
+    <link rel="canonical" href="https://form.jotform.com/231275562478968" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1" />
+    <meta name="HandheldFriendly" content="true" />
+    <style type="text/css">
+        print {
+            .form-section
+
+        {
+            display: inline !important
+        }
+
+        .form-pagebreak {
+            display: none !important
+        }
+
+        .form-section-closed {
+            height: auto !important
+        }
+
+        .page-section {
+            position: initial !important
+        }
+
+        }</style>
+    <link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/themes/CSS/defaultV2.css?v=1ef91ab
+" />
+    <link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/themes/CSS/640115dd333565084768c804.css?v=3.3.41630&themeRevisionID=6410309f3639610842113dfe" />
+    <link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/css/styles/payment/payment_styles.css?3.3.41630" />
+    <link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/css/styles/payment/payment_feature.css?3.3.41630" />
+    <style type="text/css" id="form-designer-style">
+        /* Injected CSS Code */
+        /*PREFERENCES STYLE*/
+        .form-all {
+            font-family: Inter, sans-serif;
+        }
+
+        .form-label.form-label-auto {
+            display: block;
+            float: none;
+            text-align: left;
+            width: 100%;
+        }
+
+        .form-line {
+            margin-top: 12px;
+            margin-bottom: 12px;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .form-all {
+            max-width: 752px;
+            width: 100%;
+        }
+
+        .form-label.form-label-left,
+        .form-label.form-label-right,
+        .form-label.form-label-left.form-label-auto,
+        .form-label.form-label-right.form-label-auto {
+            width: 230px;
+        }
+
+        .form-all {
+            font-size: 16px
+        }
+
+        .supernova .form-all, .form-all {
+            background-color: #fff;
+        }
+
+        .form-all {
+            color: #2C3345;
+        }
+
+        .form-header-group .form-header {
+            color: #2C3345;
+        }
+
+        .form-header-group .form-subHeader {
+            color: #2C3345;
+        }
+
+        .form-label-top,
+        .form-label-left,
+        .form-label-right,
+        .form-html,
+        .form-checkbox-item label,
+        .form-radio-item label,
+        span.FITB .qb-checkbox-label,
+        span.FITB .qb-radiobox-label,
+        span.FITB .form-radio label,
+        span.FITB .form-checkbox label,
+        [data-blotid][data-type=checkbox] [data-labelid],
+        [data-blotid][data-type=radiobox] [data-labelid],
+        span.FITB-inptCont[data-type=checkbox] label,
+        span.FITB-inptCont[data-type=radiobox] label {
+            color: #2C3345;
+        }
+
+        .form-sub-label {
+            color: #464d5f;
+        }
+
+        .supernova {
+            background-color: undefined;
+        }
+
+            .supernova body {
+                background: transparent;
+            }
+
+        .form-textbox,
+        .form-textarea,
+        .form-dropdown,
+        .form-radio-other-input,
+        .form-checkbox-other-input,
+        .form-captcha input,
+        .form-spinner input {
+            background-color: undefined;
+        }
+
+        .supernova {
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center top;
+        }
+
+        .supernova {
+            background-image: url("https://www.jotform.com/uploads/ecem/form_files/beautiful_night.28.jpg");
+        }
+
+        #stage {
+            background-image: url("https://www.jotform.com/uploads/ecem/form_files/beautiful_night.28.jpg");
+        }
+
+        .form-all {
+            background-image: none;
+        }
+
+            .form-all:before {
+                content: none;
+            }
+
+        .form-all {
+            margin-top: 72px;
+        }
+        /*PREFERENCES STYLE*/ /*__INSPECT_SEPERATOR__*/
+        /* Injected CSS Code */
+    </style>
+
+    <script src="https://cdn02.jotfor.ms/static/prototype.forms.js?3.3.41630" type="text/javascript"></script>
+    <script src="https://cdn03.jotfor.ms/static/jotform.forms.js?3.3.41630" type="text/javascript"></script>
+    <script src="https://cdn01.jotfor.ms/js/payments/validategateways.js?v=3.3.41630" type="text/javascript"></script>
+    <script type="text/javascript">
+        JotForm.newDefaultTheme = false;
+        JotForm.extendsNewTheme = true;
+        JotForm.singleProduct = false;
+        JotForm.newPaymentUIForNewCreatedForms = false;
+        JotForm.newPaymentUI = true;
+        JotForm.submitError = "jumpToFirstError";
+
+        JotForm.init(function () {
+            /*INIT-START*/
+            JotForm.alterTexts({ "confirmEmail": "", "lessThan": "Your score should be less than", "numeric": "Must only contain numeric values", "required": "This is a required field" });
+            /*INIT-END*/
+        });
+
+        JotForm.prepareCalculationsOnTheFly([null, { "name": "clickTo", "qid": "1", "text": "Ziyaretci Katilim Formu", "type": "control_head" }, null, { "description": "", "name": "teachersName3", "qid": "3", "text": "Ziyaretci", "type": "control_fullname" }, null, null, null, { "description": "", "name": "indicateThe", "qid": "7", "subLabel": "", "text": "Fuar Secimi", "type": "control_dropdown" }, null, null, null, { "name": "submit", "qid": "11", "text": "Submit", "type": "control_button" }, null, { "description": "", "name": "iletisim", "qid": "13", "text": "Iletisim", "type": "control_fullname" }]);
+        setTimeout(function () {
+            JotForm.paymentExtrasOnTheFly([null, { "name": "clickTo", "qid": "1", "text": "Ziyaretci Katilim Formu", "type": "control_head" }, null, { "description": "", "name": "teachersName3", "qid": "3", "text": "Ziyaretci", "type": "control_fullname" }, null, null, null, { "description": "", "name": "indicateThe", "qid": "7", "subLabel": "", "text": "Fuar Secimi", "type": "control_dropdown" }, null, null, null, { "name": "submit", "qid": "11", "text": "Submit", "type": "control_button" }, null, { "description": "", "name": "iletisim", "qid": "13", "text": "Iletisim", "type": "control_fullname" }]);
+        }, 20);
+    </script>
+</head>
+<body>
+    <form class="jotform-form" asp-controller="Visitor" asp-action="CreateVisitor" method="post" name="form_231275562478968" id="231275562478968" accept-charset="utf-8" autocomplete="on">
+        <input type="hidden" name="formID" value="231275562478968" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden" id="cardinalOrderNumber" value="" />
+        <div role="main" class="form-all">
+            <ul class="form-section page-section">
+                <li id="cid_1" class="form-input-wide" data-type="control_head">
+                    <div class="form-header-group  header-large">
+                        <div class="header-text httal htvam">
+                            <h1 id="header_1" class="form-header" data-component="header">Ziyaretçi Katılım Formu</h1>
+                        </div>
+                    </div>
+                </li>
+                <li class="form-line" data-type="control_fullname" id="id_3">
+                    <label class="form-label form-label-top" id="label_3" for="first_3"> Ziyaretçi </label>
+                    <div id="cid_3" class="form-input-wide" data-layout="full">
+                        <div data-wrapper-react="true">
+                            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="first">
+                                <input asp-for="isim" type="text" id="first_3" name="isim" class="form-textbox" data-defaultvalue="" autoComplete="section-input_3 given-name" size="10" value="" data-component="first" aria-labelledby="label_3 sublabel_3_first" />
+                                <label class="form-sub-label" for="first_3" id="sublabel_3_first" style="min-height:13px" aria-hidden="false">Ad / Soyad</label>
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="form-line" data-type="control_fullname" id="id_13">
+                    <label class="form-label form-label-top" id="label_13" for="first_13"> İletişim </label>
+                    <div id="cid_13" class="form-input-wide" data-layout="full">
+                        <div data-wrapper-react="true">
+                            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="first">
+                                <input asp-for="tel" type="number" id="first_13" name="tel" class="form-textbox" data-defaultvalue="" autoComplete="section-input_13 given-name" size="10" value="" data-component="first" aria-labelledby="label_13 sublabel_13_first" />
+                                <label class="form-sub-label" for="first_13" id="sublabel_13_first" style="min-height:13px" aria-hidden="false">Telefon</label>
+                            </span>
+                            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="last">
+                                <input asp-for="email" type="email" id="last_13" name="email" class="form-textbox" data-defaultvalue="" autoComplete="section-input_13 family-name" size="15" value="" data-component="last" aria-labelledby="label_13 sublabel_13_last" />
+                                <label class="form-sub-label" for="last_13" id="sublabel_13_last" style="min-height:13px" aria-hidden="false">E-posta</label>
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="form-line" data-type="control_dropdown" id="id_7">
+                    <label class="form-label form-label-top" id="label_7" for="input_7"> Fuar Seçimi </label>
+                    <div id="cid_7" class="form-input-wide" data-layout="half">
+                        <select class="form-dropdown" id="input_7" name="fId" style="width:310px" data-component="dropdown" aria-label="Fuar Seçimi">
+                            <option selected="selected" disabled="true">Please Select</option>
+                            @foreach (var f in fuarlar)
+                            {
+                                <option value="@f.Id">
+                                    @f.isim
+                                </option>
+                            }
+                        </select>
+                    </div>
+                </li>
+                <li class="form-line" data-type="control_button" id="id_11">
+                    <div id="cid_11" class="form-input-wide" data-layout="full">
+                        <div data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField">
+                            <input id="input_11" value="Geri Dön" type="button" class="form-submit-button-red-500 submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="" onclick="window.history.back()" />
+                            <button id="input_11" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" onclick="window.history.back()" data-content="">Kayıt</button>
+                        </div>
+                    </div>
+                </li>
+                <li style="display:none">Should be Empty: <input type="text" name="website" value="" /></li>
+            </ul>
+        </div>
+        <script>
+            JotForm.showJotFormPowered = "new_footer";
+        </script>
+        <script>
+            JotForm.poweredByText = "Powered by Jotform";
+        </script><input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="231275562478968" />
+        <script type="text/javascript">
+            var all_spc = document.querySelectorAll("form[id='231275562478968'] .si" + "mple" + "_spc");
+            for (var i = 0; i < all_spc.length; i++) {
+                all_spc[i].value = "231275562478968-231275562478968";
+            }
+        </script>
+    </form>
+</body>
+</html>
+<script type="text/javascript">JotForm.ownerView = true;</script><script src="https://cdn.jotfor.ms//js/vendor/smoothscroll.min.js?v=3.3.41630"></script>
+<script src="https://cdn.jotfor.ms//js/errorNavigation.js?v=3.3.41630"></script>

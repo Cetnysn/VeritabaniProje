@@ -1,0 +1,36 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model List<VeritabanıProje.Models.Ziyaretci>
+<div class="row">
+    <div id="recent-transactions" class="col-12">
+        <h6 class="my-2">Ziyaretçiler</h6>
+        <div class="card">
+            <div class="card-content">
+                <div class="table-responsive">
+                    <table id="recent-orders" class="table table-hover table-xl mb-0">
+                        <thead>
+                            <tr align="center">
+                                <th class="border-top-0">Ziyaretçi Adı</th>
+                                <th class="border-top-0">Ziyaretçi No</th>
+                                <th class="border-top-0">Ziyaretçi E-Posta</th>
+                                <th class="border-top-0">Fuar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var ziyaretci in Model)
+                            {
+                                <tr align="center">
+                                    <td class="text-truncate">@ziyaretci.isim</td>
+                                    <td class="text-truncate">@ziyaretci.tel</td>
+                                    <td class="text-truncate p-1">@ziyaretci.email</td>
+                                    <td class="text-truncate">@ziyaretci.fuar_adı</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

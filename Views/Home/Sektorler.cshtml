@@ -1,0 +1,34 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model List<VeritabanıProje.Models.Sektor>
+<div class="row">
+    <div id="recent-transactions" class="col-12">
+        <h6 class="my-2">Sektörler</h6>
+        <div class="card">
+            <div class="card-content">
+                <div class="table-responsive">
+                    <table id="recent-orders" class="table table-hover table-xl mb-0">
+                        <thead>
+                            <tr align="center">
+                                <th class="border-top-0">Sektör Adı</th>
+                                <th class="border-top-0">Eylem</th>
+                                <th class="border-top-0"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var sektor in Model)
+                            {
+                                <tr align="center">
+                                    <td class="text-truncate">@sektor.isim</td>
+                                    <td class="text-truncate"><a href="/Home/SektorSil?sId=@sektor.Id" class="mb-0 btn-sm btn btn-outline-danger round">Sil</a></td>
+                                    <td><i class="la la-thumbs-up warning float-right"></i></td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

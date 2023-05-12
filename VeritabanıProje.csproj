@@ -1,0 +1,120 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\Nazox\**" />
+    <Compile Remove="wwwroot\vendor\**" />
+    <Content Remove="wwwroot\Nazox\**" />
+    <Content Remove="wwwroot\vendor\**" />
+    <EmbeddedResource Remove="wwwroot\Nazox\**" />
+    <EmbeddedResource Remove="wwwroot\vendor\**" />
+    <None Remove="wwwroot\Nazox\**" />
+    <None Remove="wwwroot\vendor\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\form\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\fonts\paladins.woff2" />
+    <None Include="wwwroot\assets\img\aaa.svg" />
+    <None Include="wwwroot\assets\img\arrow-bottom.svg" />
+    <None Include="wwwroot\assets\img\bg-1.svg" />
+    <None Include="wwwroot\assets\img\bg-dance-event.svg" />
+    <None Include="wwwroot\assets\img\bg-form.svg" />
+    <None Include="wwwroot\assets\img\bg-icon-price.svg" />
+    <None Include="wwwroot\assets\img\bg-members.svg" />
+    <None Include="wwwroot\assets\img\bg-register.svg" />
+    <None Include="wwwroot\assets\img\circle-left-dance.svg" />
+    <None Include="wwwroot\assets\img\circle-top-dance.svg" />
+    <None Include="wwwroot\assets\img\client-1.svg" />
+    <None Include="wwwroot\assets\img\client-2.svg" />
+    <None Include="wwwroot\assets\img\client-3.svg" />
+    <None Include="wwwroot\assets\img\client-4.svg" />
+    <None Include="wwwroot\assets\img\client-5.svg" />
+    <None Include="wwwroot\assets\img\client-6.svg" />
+    <None Include="wwwroot\assets\img\conference_bg.svg" />
+    <None Include="wwwroot\assets\img\counter-1.svg" />
+    <None Include="wwwroot\assets\img\counter-2.svg" />
+    <None Include="wwwroot\assets\img\counter-3.svg" />
+    <None Include="wwwroot\assets\img\counter-4.svg" />
+    <None Include="wwwroot\assets\img\counter-icon-1.svg" />
+    <None Include="wwwroot\assets\img\counter-icon-2.svg" />
+    <None Include="wwwroot\assets\img\dance-about-single.svg" />
+    <None Include="wwwroot\assets\img\dance-counter-effect-1.svg" />
+    <None Include="wwwroot\assets\img\dance-counter-effect-2.svg" />
+    <None Include="wwwroot\assets\img\dance-counter-effect-3.svg" />
+    <None Include="wwwroot\assets\img\ef-dance-testimonial.svg" />
+    <None Include="wwwroot\assets\img\effect-form-dance.svg" />
+    <None Include="wwwroot\assets\img\effect-slider-left.svg" />
+    <None Include="wwwroot\assets\img\effect-slider-marathon.svg" />
+    <None Include="wwwroot\assets\img\effect-title-white.svg" />
+    <None Include="wwwroot\assets\img\effect-title.svg" />
+    <None Include="wwwroot\assets\img\effect-tringle-slider.svg" />
+    <None Include="wwwroot\assets\img\event-icon-1.svg" />
+    <None Include="wwwroot\assets\img\event-icon-2.svg" />
+    <None Include="wwwroot\assets\img\event-icon-3.svg" />
+    <None Include="wwwroot\assets\img\event-icon-4.svg" />
+    <None Include="wwwroot\assets\img\icon-1.svg" />
+    <None Include="wwwroot\assets\img\icon-2.svg" />
+    <None Include="wwwroot\assets\img\icon-3.svg" />
+    <None Include="wwwroot\assets\img\icon-4.svg" />
+    <None Include="wwwroot\assets\img\logo-white.svg" />
+    <None Include="wwwroot\assets\img\logo.svg" />
+    <None Include="wwwroot\assets\img\main-bg.svg" />
+    <None Include="wwwroot\assets\img\map-effect.svg" />
+    <None Include="wwwroot\assets\img\our-mission-2.svg" />
+    <None Include="wwwroot\assets\img\our-mission-3.svg" />
+    <None Include="wwwroot\assets\img\our-mission-4.svg" />
+    <None Include="wwwroot\assets\img\our-mission-5.svg" />
+    <None Include="wwwroot\assets\img\price-dance-badge-1.svg" />
+    <None Include="wwwroot\assets\img\price-dance-badge-2.svg" />
+    <None Include="wwwroot\assets\img\price-item-bg-1.svg" />
+    <None Include="wwwroot\assets\img\slider-home1-shape.svg" />
+    <None Include="wwwroot\assets\img\tringle-blue.svg" />
+    <None Include="wwwroot\assets\img\tringle-gray-little.svg" />
+    <None Include="wwwroot\assets\img\tringle-price-blue.svg" />
+    <None Include="wwwroot\assets\img\tringle-price-yellow.svg" />
+    <None Include="wwwroot\assets\img\tringle-price-yellow2.svg" />
+    <None Include="wwwroot\assets\img\tringle-white.svg" />
+    <None Include="wwwroot\assets\img\tringle-yellow-little.svg" />
+    <None Include="wwwroot\assets\js\isotope.pkgd.js" />
+    <None Include="wwwroot\assets\js\jquery-2.2.4.min.js" />
+    <None Include="wwwroot\assets\js\jquery.fancybox.js" />
+    <None Include="wwwroot\assets\js\jquery.nice-select.js" />
+    <None Include="wwwroot\assets\js\jquery.scrolly.js" />
+    <None Include="wwwroot\assets\js\parallax.min.js" />
+    <None Include="wwwroot\assets\js\rx-lazy.js" />
+    <None Include="wwwroot\assets\js\scripts.js" />
+    <None Include="wwwroot\assets\js\slick.min.js" />
+    <None Include="wwwroot\assets\js\wow.js" />
+    <None Include="wwwroot\assets\php\contact.php" />
+    <None Include="wwwroot\assets\scss\style.scss" />
+    <None Include="wwwroot\assets\scss\_footer.scss" />
+    <None Include="wwwroot\assets\scss\_forms.scss" />
+    <None Include="wwwroot\assets\scss\_header.scss" />
+    <None Include="wwwroot\assets\scss\_normalize.scss" />
+    <None Include="wwwroot\assets\scss\_site.scss" />
+    <None Include="wwwroot\assets\scss\_structure.scss" />
+    <None Include="wwwroot\assets\scss\_typography.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

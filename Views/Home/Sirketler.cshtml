@@ -1,0 +1,54 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model List<VeritabanıProje.Models.Sirket>
+<div class="row">
+    <div id="recent-transactions" class="col-12">
+        <h6 class="my-2">Şirketler</h6>
+        <div class="card">
+            <div class="card-content">
+                <div class="table-responsive">
+                    @if (TempData["ErrorMessage"] != null)
+                    {
+                        <div class="alert alert-danger">
+                            @TempData["ErrorMessage"]
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Kapat">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    }
+                    <table id="recent-orders" class="table table-hover table-xl mb-0">
+                        <thead>
+                            <tr align="center">
+                                <th class="border-top-0">Fuar</th>
+                                <th class="border-top-0">Şirket</th>
+                                <th class="border-top-0">Şirket Sektörü</th>
+                                <th class="border-top-0">Yetkili Adı</th>
+                                <th class="border-top-0">Yetkili No</th>
+                                <th class="border-top-0">Yetkili E-Posta</th>
+                                <th class="border-top-0">Onay</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var sirket in Model)
+                            {
+                                if (sirket.salon_no == 0)
+                                {
+                                    <tr align="center">
+                                        <td class="text-truncate">@sirket.fuar_isim</td>
+                                        <td class="text-truncate">@sirket.isim</td>
+                                        <td class="text-truncate">@sirket.sektor_adı</td>
+                                        <td class="text-truncate">@sirket.yetkili</td>
+                                        <td class="text-truncate">@sirket.yetkiliTel</td>
+                                        <td class="text-truncate p-1">@sirket.yetkiliMail</td>
+                                        <td class="text-truncate"><a href="/Home/StandEkle?sId=@sirket.Id" class="mb-0 btn-sm btn btn-outline-success round mr-1">Onayla</a></td>
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
